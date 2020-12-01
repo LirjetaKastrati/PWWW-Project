@@ -240,6 +240,38 @@ ul.navigation li a{
   background-color: #eeeeee;
   margin: 20px;
 }
+ul.social-icons{
+  list-style: none;
+  padding-left: 0;
+  float: left;
+/*  padding-bottom: 20px;
+*/
+}
+
+
+ul.social-icons li{
+  display: inline-block;
+}
+ul.social-icons li a{
+  font-size: 30px;
+/*  padding: 5px;
+*/  
+color: #a8a5a5;
+}
+ul.social-icons li a:hover{
+	transition: color 200ms ease-in;
+}
+
+#instagram:hover {
+  color: #e84fc9;
+}
+#facebook:hover {
+  color: #2146c2;
+}
+#twitter:hover {
+  color: #2be3e3;
+}
+
 
 .f_ContactUs {
   display: flex;
@@ -315,7 +347,7 @@ footer_read a{
 
 .footer_form input[type="submit"]{
 
-   background-color: #1f232c;
+   background-color:#c495b2;
    border-radius: 5px;
    color: #f5f4f2;
    font-weight: bold;
@@ -323,7 +355,7 @@ footer_read a{
 
 
 footer{
-    background-color: #1f232c;
+    background-color:#c495b2;
     padding: 30px 25px;
 }
 .footer_text{
