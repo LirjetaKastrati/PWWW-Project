@@ -429,4 +429,28 @@ footer{
 	
 }
 
+.main_section {
+	margin: 0 auto;
+	padding: 20px;
+	width: 920px;
+	color:#666666;
+	backgruond: linear-gradient(to right, rgb(233,192,146) 25%, rgb(221,195,164) 50%, rgb(154, 175, 164) 75%, rgb(148, 185, 166) 100%);
+}	
+	
+.main_section h3, h2{
+	color: black;
+	text-slign: center;
+}	
+	
+.main_section1{
+	margine: 0 auto;
+	padding: 20px;
+	width: none;
+	color: #66666;
+	background: linear-gradient(to right, rgb(236,50,199) 25%, rgb(194, 60, 199) 50%, rgb(235,121, 229) 75%, rgb(245,168,245) 100%);
+}	
+	
+	
+}
+
    
