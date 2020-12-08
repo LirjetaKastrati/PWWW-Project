@@ -373,8 +373,60 @@ footer{
 }
 
 
+<!--Gallery-->
+.logo{
+	width: 30%;
+	float: left;
+	line-height: 100px;
+}
 
+.logo a{
+	text-decoration: none;
+	color:#fff;
+	font-family:'Dancing Script', cursive;
+	font-size: 36px;
+	letter-spacing: 1px;
+	padding-left: 15px;
+}
 
+.search {
+	float: right;
+	margin-right: 2%;
+}
+.search input[type="text"]{
+	background: #c495b2;
+	color: #fff;
+	border-radius: 20px;
+	positon: relative;
+	box-sizing: border-box;
+	font-size: 12px;
+	border: 2px solid #fff;
+	width: 180px;
+	height: 30px;
+	outline: none;
 
+}
+.search button{
+	color: #fff;
+	font-size: 25px;
+	cursor: pointer;
+	border: none;
+	background: #c495b2;
+	margin-top: 5px;
+	margin-left: 5px;
+
+}
+.search-button{
+	position: absolute;
+	top: 6.7%;
+	transform: translateY(-50%);
+	width: 30px;
+	height: 32px;
+	color: black;
+	border-radius: 20px;
+	color: white;
+	background: #29292f;
+	
+}
 
    
