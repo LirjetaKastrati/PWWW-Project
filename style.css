@@ -450,7 +450,43 @@ footer{
 	background: linear-gradient(to right, rgb(236,50,199) 25%, rgb(194, 60, 199) 50%, rgb(235,121, 229) 75%, rgb(245,168,245) 100%);
 }	
 	
+.main_section1 h3,
+h2{
+	color: black;
+	text-align: center;
+}
+
+.shot-text{
+	font-size: 22px;
+	text-align: center;
+	font-style: italic;
+
+}
+
+.content_div {
+	width: 250px;
+	display: inline-block;
+	margine: 0 26px;
+	vertical-align: top;
+}
+
+.content_div p{
+	color: #fff;
+}
+
+.content_div img {
+	padding: 5px;
+	border: 4px  lightgrey ridge;
 	
 }
 
+.content_div a {
+	color: #660000;
+	text-decoration: none;
+
+}
    
+.content_div a:hover {
+	color: #044594;
+	text-decoration: underline;
+}
