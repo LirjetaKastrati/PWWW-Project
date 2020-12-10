@@ -525,6 +525,23 @@ h2{
 	float: left;
 }
 
+#data h2{
+	margin-left: 40px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: slategrey;
+}
 
+.data1 img{
+	margin-left: 40px;
+	width: 340px;
+	margin: 0 auto;
+}
 
-
+.text1data1{
+	width: 340px;
+	margin: 0 auto;
+}
+.text2data{
+	width: 340px;
+	margin: 0 auto;
+}
