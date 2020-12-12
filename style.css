@@ -133,6 +133,7 @@ ul.navigation li a{
     outline: none;
     width: 180px;
     height: 30px;
+    text-align: center;
 
 }
 
@@ -171,6 +172,10 @@ ul.navigation li a{
   padding: 50px 20px;
 }
 
+#service ul {
+  display: inline;
+}
+
 #service li{
   display: inline-block;
   padding-left: 10%;
@@ -182,7 +187,7 @@ ul.navigation li a{
 .service_s h4::after {
   position: absolute;
   content: '';
-  height: 5px;
+  height: 3px;
   width: 75px;
   top: 25px;
   left: 0;
@@ -194,7 +199,7 @@ ul.navigation li a{
 .service_s h4{
   padding-bottom: 20px;
   position: relative;
-}
+ }
 
 .service_s p{
   color: #979797;
@@ -221,22 +226,19 @@ ul.navigation li a{
 
 .facilis_title h2 {
   position: absolute;
-  background: #fff;
   width: 50%;
   top: -65px;
   left: 330px;
   z-index: 2;
+  padding-top: 15px;
 }
 
 .single_facilis h4 {
   font-size: 20px;
 }
 
-.single_facilis p {
-  padding-bottom: 17px;
-}
-
 .single_facilis {
+  padding: 10px 10px 10px 10px;
   background-color: #eeeeee;
   margin: 20px;
 }
@@ -592,6 +594,3 @@ h2{
 	column-rule: 4px dotted;
 
 }
-
-
-
