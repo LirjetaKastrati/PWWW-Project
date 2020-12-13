@@ -168,22 +168,6 @@ ul.navigation li a{
   background: #29292f;
 }
 
-#service {
-  padding: 50px 20px;
-}
-
-#service ul {
-  display: inline;
-}
-
-#service li{
-  display: inline-block;
-  padding-left: 10%;
-  background-repeat: no-repeat;
-  width: 25%;
-  
-}
-
 .service_s h4::after {
   position: absolute;
   content: '';
@@ -195,13 +179,30 @@ ul.navigation li a{
 }
 
 
-
-.service_s h4{
+/* 
+per me vone
+.service_s h4
+{
   padding-bottom: 20px;
   position: relative;
+  }
+  */
+
+ .service_s h4 a
+ {
+  text-decoration: none;
+  color: #6a85c4;
+  font-size: 20px;  
  }
 
-.service_s p{
+ .service_s h4 a:hover
+ {
+  color: rgb(148, 3, 22);
+  transition: color 200ms ease-in;
+ }
+
+.service_s p
+{
   color: #979797;
 }
 
@@ -291,10 +292,16 @@ ul.social-icons li a:hover{
   font-size: 15px;
 }
 
-.f-ContactUs li a{
+.f_ContactUs li a{
   text-decoration: none;
-  color: #1f232c;
+  color: #6a85c4;
   font-size: 15px;
+}
+
+.f_ContactUs li a:hover 
+{
+  color: rgb(148, 3, 22);
+  transition: color 200ms ease-in;
 }
 
 .f_ContactUs h3 {
@@ -340,11 +347,17 @@ ul.social-icons li a:hover{
 }
 
 
-footer_read a{
+.footer_read a{
   text-decoration: none;
   font-size: 14px;
-  color: #000;
+  color: #6a85c4;
   text-align: right;
+}
+
+.footer_read a:hover
+{
+  color: rgb(148, 3, 22);
+  transition: color 200ms ease-in;
 }
 
 .footer_form input[type="submit"]{
