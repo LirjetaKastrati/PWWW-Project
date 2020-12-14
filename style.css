@@ -54,7 +54,17 @@ ul.navigation li a:hover {
   color: #fff;
   transition: color 200ms ease-in;
 }
-
+/* TEST*/
+nav ul li select { font-weight: bold; color: white; border: 2px solid rgb(184, 69, 140);
+  text-align: center; width: 10em; background-color: rgb(182, 70, 167); }
+nav ul li select ul { display: none; margin: 0; padding: 0; }
+nav ul li select:hover ul { display: block; }
+nav ul li select ul li { background-color: rgb(180, 68, 156);
+  width: 10em; color: black; }
+nav ul li select ul li:hover { background-color: rgb(212, 143, 197); }
+nav ul li select ul li a:hover { text-decoration: none; color: #fff;
+  transition: color 200ms ease-in;}
+ /*TEST*/ 
 
 .logo{
     width: 30%;
@@ -607,3 +617,4 @@ h2{
 	column-rule: 4px dotted;
 
 }
+
