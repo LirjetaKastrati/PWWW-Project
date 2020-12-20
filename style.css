@@ -54,6 +54,7 @@ ul.navigation li a:hover {
   color: #fff;
   transition: color 200ms ease-in;
 }
+
 /* TEST*/
 nav ul li select { font-weight: bold; color: white; border: 2px solid rgb(184, 69, 140);
   text-align: center; width: 10em; background-color: rgb(182, 70, 167); }
