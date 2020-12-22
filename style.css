@@ -607,16 +607,17 @@ h2{
 	margin-right: 5px;
 }
 
-.text_col{
-	-webkit-column-count: 6;
-	-moz-column-count: 6;
-	column-count: 6;
-	-webkit-column-gap: 40px;
-	-moz-column: 40px;
-	column-gap: 40px;
-	-webkit-column-rule: 4px dotted;
-	-moz-column-rule: 4px dotted;
-	column-rule: 4px dotted;
 
+.text_col {
+  -webkit-column-count: 6;
+  -moz-column-count: 6;
+  column-count: 6;
+  -webkit-column-gap: 40px;
+  -moz-column-gap: 40px;
+  column-gap: 40px;
+  -webkit-column-rule: 4px dotted;
+  -moz-column-rule: 4px dotted;
+  column-rule: 4px dotted;
 }
+
 
