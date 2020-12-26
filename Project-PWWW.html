@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
-</head>
+	</head>
 <body>
 	<div id="wrapper" class="wrapper">
 		<header id="head">
@@ -48,11 +48,29 @@
 		 		</header>
 			
 	         <main>
-		      <section id="image">
-				<div class="image_img">
-					<img src="img/lifestylecover.jpg" alt="Fotoja e kopertinës" style="width: 100%">
-				</div>
-			      
+
+				<div class="coverpic" style="padding-top: 90px;">
+
+					<div style="position: absolute; left: 0; padding: 20px 50px;">
+					  <span class="change_click" onclick="currentSlide(1)"></span> 
+					  <span class="change_click" onclick="currentSlide(2)"></span> 
+					  <span class="change_click" onclick="currentSlide(3)"></span> 
+					</div>
+					<img id="cover-i" style="width:100%; height:380px">
+
+					<div class="caption">
+					  <h3 id="h3">Lifestyle</h3>
+					  <p id="p">Cfarë do të shihni në webfaqen tonë?</p>
+					</div>
+					
+				  <a class="back" onclick="nextSlide(-1)">&#10096;</a>
+				  <a class="next" onclick="nextSlide(1)">&#10097;</a>
+
+			 	 </div>
+
+
+		      <section>
+				
 				<div class="contact">
 			
 					<h2>Që të bëheni pjesë e faqes sonë, na tregoni storjen tuaj <br>
@@ -258,4 +276,49 @@
 		</main>	
 	</div>		
   </body>
+  <script>
+
+    var slideIndex = 1;
+    slide(slideIndex);
+    
+	function nextSlide(n)
+	 {
+        slide(slideIndex += n);
+     }   
+	function currentSlide(n)
+	 {
+        slide(slideIndex = n);
+     }   
+	function slide(n) 
+	{
+      var covers = ["img/lifestylecover.jpg","img/lifestylecover2.jpg","img/lifestylecover3.jpg"];
+      var h3 = ["Stile jetese","Shendet","Mode"];
+      var p = ["dicka","shendet dicka 222","mode dicka 333"];
+      var i;
+	  var changes_click = document.getElementsByClassName("change_click");
+	  
+	  if (n > covers.length)
+	   {
+		   slideIndex = 1
+	    }    
+
+	  if (n < 1)
+	   {
+		   slideIndex = covers.length
+	    }
+      
+      var img = document.getElementById("cover-i");
+      img.src = covers[slideIndex - 1];
+      document.getElementById("h3").innerHTML = h3[slideIndex - 1];
+      document.getElementById("p").innerHTML = p[slideIndex - 1];
+       
+	  for (i = 0; i < covers.length; i++) 
+	   {
+		changes_click[i].className = changes_click[i].className.replace(" active", "");
+		}
+		
+	  changes_click[slideIndex-1].className += " active";
+    }
+    </script>
+
   </html>

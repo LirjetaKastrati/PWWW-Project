@@ -67,7 +67,7 @@ nav ul li select ul li:hover { background-color: rgb(212, 143, 197); }
 nav ul li select ul li a:hover { text-decoration: none; color: #fff;
   transition: color 200ms ease-in;}
  /*TEST*/ 
- 
+
 /*Dropdown lista ne header*/
 
 nav ul li ul
@@ -649,4 +649,71 @@ h2 {
   column-rule: 4px dotted;
 }
 
+/* covers slides*/
+.coverpic
+ {  
+  position: relative;
+}
+.back , .next
+ {
+    position: absolute;
+    cursor: pointer;
+    background-color: transparent;
+    color: black;
+    background-color:#c495b2;
+    opacity: 0.6;
+    text-align: center;
+    padding: 8px 16px;
+    font-size: 25px;
+    font-weight: bolder;
+    border-radius: 90%;
+    border: 1px solid black;
+    margin: 200px 50px;
+}
 
+.back 
+{
+  left: 0;
+}
+.next
+{
+  right: 0;
+}
+
+.back:hover , .next:hover, .change_click:hover
+{
+  background-color: transparent;
+}
+
+.caption 
+{
+  height: 100px;
+  width: 100%;
+  opacity: 0.4;
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  bottom: 5px;
+  
+}
+
+.change_click
+{
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 4px;
+  background-color: #c495b2;
+  border: 1px solid black;
+  border-radius: 100%;
+  display: inline-block;
+}
+
+.active 
+{
+  background-color: transparent;
+  border: 1px solid black;
+}
+
+/* covers slides*/
