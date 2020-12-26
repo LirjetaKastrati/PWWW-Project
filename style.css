@@ -67,6 +67,34 @@ nav ul li select ul li:hover { background-color: rgb(212, 143, 197); }
 nav ul li select ul li a:hover { text-decoration: none; color: #fff;
   transition: color 200ms ease-in;}
  /*TEST*/ 
+ 
+/*Dropdown lista ne header*/
+
+nav ul li ul
+{
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+#dropdowni ul li 
+{
+  padding: 10px ;
+  margin-left: -56px;
+  background-color: #c495b2;
+  text-transform: uppercase;
+   
+}
+
+nav ul li:hover ul
+{
+  display: grid;
+  margin-left: 5%;
+  
+}
+
+/* */
+
 
 .logo{
     width: 30%;
