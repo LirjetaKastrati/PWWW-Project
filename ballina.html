@@ -50,7 +50,7 @@
 			
 	         <main>
 
-				<div class="coverpic" style="padding-top: 90px;">
+<!-- 				<div class="coverpic" style="padding-top: 90px;">
 
 					<div style="position: absolute; left: 0; padding: 20px 50px;">
 					  <span class="change_click" onclick="currentSlide(1)"></span> 
@@ -67,11 +67,42 @@
 				  <a class="back" onclick="nextSlide(-1)">&#10096;</a>
 				  <a class="next" onclick="nextSlide(1)">&#10097;</a>
 
-			 	 </div>
+			 	 </div> -->
 
 
-		      <section>
-				
+<!-- 		      <section> -->
+				<section id="image">
+	         		 	<div class="imagewrapper">
+				<div class="image_img">
+						<div class="galleryslide">
+		      		<div class="slider">
+					<div class="slides">
+						<input type="radio" name="radio-btn" id="radio1">
+						<input type="radio" name="radio-btn" id="radio2">
+						<input type="radio" name="radio-btn" id="radio3">
+						<input type="radio" name="radio-btn" id="radio4">
+						<div class="slide first">
+			          <img src="img/lifestylecover.jpg" alt="Fotoja e kopertinës"style="width: 100%"></div>
+					<div class="slide"><img src="img/cover2.jpg"style="width: 100%"></div>
+					<div class="slide"><img src="img/cover3.jpg"style="width: 100%"></div>
+					<div class="slide"><img src="img/cover4.jpg"style="width: 100%"></div>
+					<div class="navigation-auto">
+			        <div class="auto-btn1"></div>
+					<div class="auto-btn2"></div>
+					<div class="auto-btn3"></div>
+					<div class="auto-btn4"></div>
+					</div>
+					</div>
+					<div class="navigation-manual">
+					<label for="radio1" class="manual-btn"></label>
+					<label for="radio2" class="manual-btn"></label>
+					<label for="radio3" class="manual-btn"></label>
+					<label for="radio4" class="manual-btn"></label>
+				</div>
+				</div>
+				</div>
+				</div>
+				</div>
 				<div class="contact">
 			
 					<h2>Që të bëheni pjesë e faqes sonë, na tregoni storjen tuaj <br>
@@ -278,48 +309,58 @@
 	</div>		
   </body>
   <script>
-
-    var slideIndex = 1;
-    slide(slideIndex);
-    
-	function nextSlide(n)
-	 {
-        slide(slideIndex += n);
-     }   
-	function currentSlide(n)
-	 {
-        slide(slideIndex = n);
-     }   
-	function slide(n) 
-	{
-      var covers = ["img/lifestylecover.jpg","img/lifestylecover2.jpg","img/lifestylecover3.jpg"];
-      var h3 = ["Stile jetese","Shendet","Mode"];
-      var p = ["dicka","shendet dicka 222","mode dicka 333"];
-      var i;
-	  var changes_click = document.getElementsByClassName("change_click");
-	  
-	  if (n > covers.length)
-	   {
-		   slideIndex = 1
-	    }    
-
-	  if (n < 1)
-	   {
-		   slideIndex = covers.length
-	    }
-      
-      var img = document.getElementById("cover-i");
-      img.src = covers[slideIndex - 1];
-      document.getElementById("h3").innerHTML = h3[slideIndex - 1];
-      document.getElementById("p").innerHTML = p[slideIndex - 1];
-       
-	  for (i = 0; i < covers.length; i++) 
-	   {
-		changes_click[i].className = changes_click[i].className.replace(" active", "");
+	   var counter = 1;
+	setInterval(function(){
+		document.getElementById('radio' + counter).checked = true;
+		counter++;
+		if(counter > 4){
+			counter =1;
 		}
+
+	}, 5000)
+
+//     var slideIndex = 1;
+//     slide(slideIndex);
+    
+// 	function nextSlide(n)
+// 	 {
+//         slide(slideIndex += n);
+//      }   
+// 	function currentSlide(n)
+// 	 {
+//         slide(slideIndex = n);
+//      }   
+// 	function slide(n) 
+// 	{
+//       var covers = ["img/lifestylecover.jpg","img/lifestylecover2.jpg","img/lifestylecover3.jpg"];
+//       var h3 = ["Stile jetese","Shendet","Mode"];
+//       var p = ["dicka","shendet dicka 222","mode dicka 333"];
+//       var i;
+// 	  var changes_click = document.getElementsByClassName("change_click");
+	  
+// 	  if (n > covers.length)
+// 	   {
+// 		   slideIndex = 1
+// 	    }    
+
+// 	  if (n < 1)
+// 	   {
+// 		   slideIndex = covers.length
+// 	    }
+      
+//       var img = document.getElementById("cover-i");
+//       img.src = covers[slideIndex - 1];
+//       document.getElementById("h3").innerHTML = h3[slideIndex - 1];
+//       document.getElementById("p").innerHTML = p[slideIndex - 1];
+       
+// 	  for (i = 0; i < covers.length; i++) 
+// 	   {
+// 		changes_click[i].className = changes_click[i].className.replace(" active", "");
+// 		}
 		
-	  changes_click[slideIndex-1].className += " active";
-    }
+// 	  changes_click[slideIndex-1].className += " active";
+//     }
+	  
     </script>
 
   </html>
