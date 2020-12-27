@@ -1,8 +1,3 @@
-*
-{
-  font-family: 'Lora', 'Times New Roman', Times, serif;
-}
-
 /* 1- kronika*/
 
 #kronikat1 , #kronikat2 , #kronikat3
@@ -78,15 +73,23 @@
  #news
  {
   height: 300px;
-  width: fit-content;
   margin: 30px 30px;
+  padding-bottom: 30px;
+}
+
+#fotoD
+{
+  position: absolute;
+  left:540px;
+  background-repeat: no-repeat;
+  background-size: cover;  
 }
 
 #tekstM
-{
+{ 
   float: left;
   text-align: left;
-  width: 50%;
+  width: 500px;
   height: 300px;
   background: -webkit-linear-gradient(to right, #923b71, #c495b2, #c495b257); 
   background: linear-gradient(to right, #923b71, #c495b2, #c495b257); 
@@ -102,12 +105,13 @@
 #tekstM p a 
 {
   text-decoration: none;
-  color: blue;
+  color: #6a85c4;
+  font-weight: bolder;
 }
 
 #tekstM p a:hover
 {
-  color: red;
+  color: rgb(148, 3, 22);
 }
 
 #tekstM h1
@@ -118,14 +122,16 @@
   margin-bottom: -10px;
 }
 
-#fotoD
+#fotoD img
 {
-  position: absolute;
-  left:52.25%;
-  width: 47.75%;
-  height:300px;  
-  background-repeat: no-repeat;
-  background-size: cover;  
+  height: 300px;
+  width: 500px;
+}
+
+#fotoD , #tekstM
+{
+  margin-left: 120px;
+  margin-top: 30px;
 }
 
 /* 2-lajmet end*/
