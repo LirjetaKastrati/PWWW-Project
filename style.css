@@ -29,7 +29,7 @@ img{
 header {
   margin:0;
   height: 100px;
-  background: #c495b2;
+  background: #c495b2; 
   width: 100%;
   z-index: 10;
   position: fixed;
@@ -56,7 +56,7 @@ ul.navigation li a:hover {
   transition: color 200ms ease-in;
 }
 
-/* TEST*/
+/* TEST per drop down listen ne navigim*/
 nav ul li select { font-weight: bold; color: white; border: 2px solid rgb(184, 69, 140);
   text-align: center; width: 10em; background-color: rgb(182, 70, 167); }
 nav ul li select ul { display: none; margin: 0; padding: 0; }
@@ -716,4 +716,4 @@ h2 {
   border: 1px solid black;
 }
 
-/* covers slides*/
+/* covers slides end*/

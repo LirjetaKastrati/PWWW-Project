@@ -1,0 +1,121 @@
+/* 1- kronika*/
+
+#kronikat 
+{
+  padding-top: 0px;
+  padding-left: 3%;
+  margin-bottom: 40px;
+}
+
+.kronike 
+{
+  width: 235px;
+  height: 420px;
+  background-color: #c495b2;
+  border-radius: 10px;
+  box-shadow: 5px 10px 12px  #c495b2;
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.kronike:hover 
+{
+  background-color: #c495b2;
+  transform-style: preserve-3d;
+  transform: scale(1.15);
+  transition: all ease 0.5s;  
+}
+
+.kronike_title
+{
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+
+.kronike:hover .kronike_title
+{
+  color: rgb(255, 255, 255);
+}
+
+.kronike img
+{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: 200px;
+  width: 200px;
+}
+
+.kronike_text p 
+{
+  color: black;
+  font-size: 13px;
+  font-family: 'Lora', 'Times New Roman', Times, serif;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+/* 1-kornika end*/
+
+
+/* 2-lajmet*/
+
+ #news
+ {
+  height: 300px;
+  width: fit-content;
+  margin: 30px 30px;
+}
+
+#tekstM
+{
+  float: left;
+  text-align: left;
+  width: 50%;
+  height: 300px;
+  background: -webkit-linear-gradient(to right, #923b71, #c495b2, #c495b257); 
+  background: linear-gradient(to right, #923b71, #c495b2, #c495b257); 
+  position:absolute;
+  overflow: auto;
+}
+
+#tekstM p 
+{
+  padding: 10px 20px 10px 20px;
+}
+
+#tekstM p a 
+{
+  text-decoration: none;
+  color: blue;
+}
+
+#tekstM p a:hover
+{
+  color: red;
+}
+
+#tekstM h1
+{
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: -10px;
+}
+
+#fotoD
+{
+  position: absolute;
+  left:52.25%;
+  width: 47.75%;
+  height:300px;  
+  background-repeat: no-repeat;
+  background-size: cover;  
+}
+
+/* 2-lajmet end*/
+
