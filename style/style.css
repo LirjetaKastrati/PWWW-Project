@@ -50,7 +50,7 @@ img
 
 header 
 {
-  margin:0;
+  margin: 0;
   height: 100px;
   background: #c495b2; 
   width: 100%;
@@ -63,7 +63,7 @@ ul.navigation
   list-style: none;
   padding-left: 0;
   float: right;
-  margin:5px auto;
+  margin: 5px auto;
 }
 
 
@@ -132,7 +132,7 @@ nav ul li:hover ul
     text-decoration: none;
     color: #fff;
     font-family: 'Dancing Script', cursive;
-    letter-spacing:1px;
+    letter-spacing: 1px;
     font-size: 36px;
     padding-left: 15px;
 }
@@ -147,6 +147,11 @@ nav a {
 }
 ul.navigation li a{
   font-size: 16px;
+}
+.contact a:hover{
+background: #c495b2; 
+transition: .2s ease-in; 
+
 }
 
 /*Fillimi i Gallery Slider*/
@@ -354,7 +359,7 @@ ul.navigation li a{
 .service_s h4::after {
   position: absolute;
   content: '';
-  height: 3px;
+  height: 5px;
   width: 75px;
   top: 25px;
   left: 0;
@@ -410,6 +415,7 @@ per me vone
 
 .facilis_title h2 {
   position: absolute;
+  background: #fff;	
   width: 50%;
   top: -65px;
   left: 330px;
@@ -455,12 +461,18 @@ ul.social-icons li a:hover{
 
 #instagram:hover {
   color: #e84fc9;
+  font-size: 40px;  
+  transition: .3s ease-in;
 }
 #facebook:hover {
   color: #2146c2;
+  font-size: 40px;  
+  transition: .3s ease-in;
 }
 #twitter:hover {
   color: #2be3e3;
+  font-size: 40px;  
+  transition: .3s ease-in;
 }
 
 
@@ -518,13 +530,16 @@ ul.social-icons li a:hover{
   width: 85% !important;
 }
 
-
+#submitbutton:hover{  
+  cursor: pointer;   
+  background: #96b7eb;
+} 
 
 
 
 #facilis li{
   display: inline-block;
-  width:32%;
+  width: 32%;
 }
 .footer_form input{
     border: none;
@@ -535,7 +550,7 @@ ul.social-icons li a:hover{
 }
 
 
-.footer_read a{
+.footer_read a {
   text-decoration: none;
   font-size: 14px;
   color: #6a85c4;
@@ -719,7 +734,7 @@ h2 {
 
 .data2 {
 	width: 30%;
-	/*hight: 430px;*/
+	hight: 430px;
 	margin-right: 30px;
 	float: left;
 }
@@ -739,14 +754,15 @@ h2 {
 .data1 img{
 	margin-left: 40px;
 	width: 340px;
+	height: 150px;
 	margin: 0 auto;
 }
 
-.text1data1{
+.text1data1 {
 	width: 340px;
 	margin: 0 auto;
 }
-.text2data {
+.text2data1 {
 	width: 340px;
 	margin: 0 auto;
 }
@@ -754,7 +770,7 @@ h2 {
 .data2 a {
 	float: right;
 	margin-right: 45px;
-	margin-right: 5px;
+	margin-top: 15px;
 }
 
 .item {
@@ -783,6 +799,38 @@ h2 {
 	margin-right: 5px;
 }
 
+.item h4{
+  float: left;
+  margin: 0 0 0 0;
+}
+
+.quote{
+  margin-left: 40px;
+  color: #979797;
+}
+
+.quote img{
+  float: left;
+  width: 50px;
+  height: 50px;
+}
+
+.quote h4{
+  float: left;
+  font-size: 20px;
+  margin: 0 0 0 0;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.quote p{
+  float: right;
+}
+
+.quote a{
+  float: right;
+  margin-right: 10px;
+}
 
 .text_col {
   -webkit-column-count: 6;
