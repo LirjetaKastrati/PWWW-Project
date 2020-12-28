@@ -148,6 +148,11 @@ nav a {
 ul.navigation li a{
   font-size: 16px;
 }
+.contact a:hover{
+background: #c495b2; 
+transition: .2s ease-in; 
+
+}
 
 /*Fillimi i Gallery Slider*/
 
@@ -455,12 +460,18 @@ ul.social-icons li a:hover{
 
 #instagram:hover {
   color: #e84fc9;
+  font-size: 40px;  
+  transition: .3s ease-in;
 }
 #facebook:hover {
   color: #2146c2;
+  font-size: 40px;  
+  transition: .3s ease-in;
 }
 #twitter:hover {
   color: #2be3e3;
+  font-size: 40px;  
+  transition: .3s ease-in;
 }
 
 
@@ -518,7 +529,10 @@ ul.social-icons li a:hover{
   width: 85% !important;
 }
 
-
+#submitbutton:hover{  
+  cursor: pointer;   
+  background: #96b7eb;
+} 
 
 
 
