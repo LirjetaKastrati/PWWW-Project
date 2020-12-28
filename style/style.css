@@ -255,7 +255,7 @@ ul.navigation li a{
 #radio3:checked ~ .navigation-auto .auto-btn3{
   background: #c495b2;
 }
-}
+
 #radio4:checked ~ .navigation-auto .auto-btn4{
   background: #c495b2;
 }
