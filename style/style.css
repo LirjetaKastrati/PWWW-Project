@@ -804,6 +804,34 @@ h2 {
   margin: 0 0 0 0;
 }
 
+.quote{
+  margin-left: 40px;
+  color: #979797;
+}
+
+.quote img{
+  float: left;
+  width: 50px;
+  height: 50px;
+}
+
+.quote h4{
+  float: left;
+  font-size: 20px;
+  margin: 0 0 0 0;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.quote p{
+  float: right;
+}
+
+.quote a{
+  float: right;
+  margin-right: 10px;
+}
+
 .text_col {
   -webkit-column-count: 6;
   -moz-column-count: 6;
