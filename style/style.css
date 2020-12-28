@@ -770,7 +770,7 @@ h2 {
 .data2 a {
 	float: right;
 	margin-right: 45px;
-	margin-right: 5px;
+	margin-top: 15px;
 }
 
 .item {
@@ -799,6 +799,10 @@ h2 {
 	margin-right: 5px;
 }
 
+.item h4{
+  float: left;
+  margin: 0 0 0 0;
+}
 
 .text_col {
   -webkit-column-count: 6;
