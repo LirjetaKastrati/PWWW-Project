@@ -175,3 +175,33 @@
 }
 
 /* me shume / me pak storje*/
+
+#s_button , #stories
+{
+  margin-top: -20px;
+  margin-left: 15%;  
+  background: #c495b2;	
+	border-radius: 25px;
+	font-size: 30px;	
+	width: fit-content;
+	height: fit-content;
+  padding: 15px 15px 15px 15px;
+  
+}
+
+#s_button a , #stories a 
+{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+#s_button a:hover, #stories a:hover
+{
+  color: rgb(148, 3, 22);
+  transition: color 200ms ease-in;
+}
+
+
+
+/* butoni ne home page start*/
