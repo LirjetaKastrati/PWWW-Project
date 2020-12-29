@@ -150,3 +150,17 @@ fieldset {
 :-ms-input-placeholder {
   color: #888;
 }
+
+/*per kyqu.html start*/
+
+input[type=password]
+{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid #c495b2;
+  box-sizing: border-box;
+}
+
+/*per kyqu.html end*/
