@@ -50,16 +50,13 @@
   <main>
     <div class="container" id="part1">  
         <form id="contact" action="" method="post">           
-          <h3>LifeStyle</h3>
+          <!--<h3>LifeStyle</h3>-->
           <fieldset>
           <!--<legend>Regjistrimi</legend>-->
-            <h4>Regjistrohu</h4>
+            <p style="text-align: center; font-size: 25px; font-weight: bolder; padding: 15px;">Regjistrohu</p>
                 
-                <label> Emri: </label>
-                <input  type="text" name="name" required autofocus>
-
-                <label> Mbiemri: </label>
-                <input type="text" name="surname" required>
+                <label> Emri dhe mbriemri: </label>
+                <input type="text" name="name" required autofocus>
 
                 <label> E-maili: </label>
                 <input type="email" name="email" autocomplete="on" required>
@@ -70,17 +67,11 @@
                 <label> Rishkruaj fjalëkalimin: </label>
                 <input type="password" name="passwordConfirm" required><br>
                                        
-                <!--  <label><b>Fjalëkalimi</b></label>                
-                <input type="password" placeholder="Fjalëkalimi" required>
-                <br>
-               
-                    <button name="submit" type="submit" value="Submit" id="contact-submit" data-submit="...Duke u procesuar">
-                        Regjistrohu</button>
-                -->                            
+                                           
          </fieldset>   
          <!-- <button name="next" type="submit" id="contact-submit" onclick="next()">Vazhdo</button> -->
          <fieldset>
-            <button onclick="next()" name="submit" type="text" id="contact-submit"> &rarr; Vazhdo</button>
+            <button onclick="next1()" name="submit" type="text" id="contact-submit"> Vazhdo &rarr; </button>
           </fieldset>
          <!--<span onclick="next()" >Vazhdo</span> -->
         </form>       
@@ -93,26 +84,19 @@
      <fieldset>
        <!--<legend>Sign Up</legend>--> 
        <fieldset>
-        <button onclick="back()" name="submit" type="text" id="contact-submit"> &larr; Kthehu</button>
+        <button onclick="back1()" name="submit" type="text" id="contact-submit"> &larr; Kthehu</button>
       </fieldset>    
        
        <label> Numri i telefonit: </label>
-       <input type="tel" name="phoneNumber" required>
+       <input type="tel" name="phoneNumber" >
 
        <label> E-mail rezervë: </label>
-       <input type="email" name="email" autocomplete="on" required>
-           
-       <label> Ditëlindja: </label>
-       <input type="date" name="birthday" required>
-
-       <label> Gjinia:</label>
-       <input type="radio" name="gender" class="glab" value="male" required>Femër<br>
-       <input type="radio" name="gender" class="glab" value="female" required>Mashkull<br>
-       <input type="radio" name="gender" class="glab" value="other" required>Tjetër<br>
+       <input type="email" name="email" autocomplete="on" >
 
        <label>Shteti:</label>
-       <input list="country" name="country" required>
-       <datalist id="country">
+       <p>&nbsp;</p>
+       <input id="lista" list="country" name="country" required>
+       <datalist id="lista">
             <option value="Kosovë">
             <option value="Shqipëri">
             <option value="Maqedoni e Veriut">
@@ -121,22 +105,56 @@
             <option value="Tjetër">
        </datalist>
 
+       <p>&nbsp;</p>
        <label> Adresa e plotë: </label>
        <input type="text" name="adress" required>
+       <p>&nbsp;</p>
+             
+     <fieldset style="padding-top: 15px;">
+        <button onclick="next2()" name="submit" type="text" id="contact-submit"> Vazhdo &rarr; </button>
+      </fieldset>
+    </form>
+   </div>
+
+   <div class="container" id="part3" style="display: none;">  
+    <form id="contact" action="" method="post">      
+     <fieldset>
+       <!--<legend>Sign Up</legend>--> 
+       <fieldset>
+        <button onclick="back2()" name="submit" type="text" id="contact-submit"> &larr; Kthehu</button>
+      </fieldset>    
+       
+       <label> Ditëlindja: </label>
+       <input type="date" name="birthday" required>
+
+       <label> Gjinia:</label>
+       <p>&nbsp;</p>
+       <div class="controls">
+        <label class="radio">
+          <input type="radio" name="femer" value="femer">Femër
+        </label>
+                 
+        <label class="radio">
+          <input type="radio" name="mashkull" value="mashkull">Mashkull
+        </label>
+        
+        <label class="radio">
+          <input type="radio" name="other" value="other">Tjetër
+        </label>
+        
+      </div>
+      <p>&nbsp;</p>
+       <label> Profesioni: </label>
+       <input type="text" name="profession" required>
+ 
 
         <input type="checkbox" value="yes" id="terms_conditions" 
             name="terms_conditions" required> 
            Duke krijuar llogarinë, ju pajtoheni me Afatet dhe Kushtet tona
-           <a href="#" id="terms">Terms & Privacy</a>
+          <p style="text-align: center;"> <br><a href="doc/TermsConditions.pdf">Terms & Conditions</a></p>
+          <p> &nbsp; </p>
                    
-         <!--  <label><b>Fjalëkalimi</b></label>                
-           <input type="password" placeholder="Fjalëkalimi" required>
-           <br>
-          
-            <button name="submit" type="submit" value="Submit" id="contact-submit" data-submit="...Duke u procesuar">
-                Regjistrohu</button>
-        -->
-
+         
         <div>   
             <fieldset>
                 <button type="submit" name="submit" value="Regjistrohu" id="submit">Regjistrohu</button>
@@ -146,9 +164,6 @@
                 <button type="reset" name="reset" value="fshij" id="submit">Fshij</button>
             </fieldset> 
                                    
-           <!-- <input type="submit" name="submit" value="Regjistrohu" id="submit">
-            <input type="reset" name="reset" value="Fshij">-->
-
         </div>       
      </fieldset>
     </form>
@@ -178,7 +193,6 @@
                 <h4>Vegëza </h4>
                 <ul>
                     <li><a href="https://www.elle.com/">Revista Elle</a></li>
-                    <! -- si të bëjmë contact us shembull tek qekjo më poshtë -->
                     <li><a href="http://lifestylemagazineonline.com/">Revista Lifestyle US</a></li> 
                     <li><a href="https://www.theguardian.com/us/lifeandstyle">The Guardian / Lifestyle</a></li>
                     <li><a href="https://www.lifestylesports.com/eu/">Lifestyle Sports</a></li>
