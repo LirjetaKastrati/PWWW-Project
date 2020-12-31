@@ -423,9 +423,12 @@ per me vone
   font-size: 20px;
 }
 
-.single_facilis p {
-    padding-bottom: 17px;
-  }
+.single_facilis p 
+{
+    padding-top: 10px ;
+    padding-left: 10px;
+    padding-right: 10px;
+}
 
 .single_facilis a
 {
@@ -440,11 +443,10 @@ per me vone
   transition: color 200ms ease-in;
 }
 
-  
 
 .single_facilis 
-{
-  padding: 10px 10px 10px 10px;
+{ height: 430px;
+  width: 300px;
   background-color: #c495b25b;
   /*background-color: #eeeeee ;*/
   margin: 20px;
