@@ -10,7 +10,6 @@
 #kronikat2 , #kronikat3
 {
   display: none;
-  padding-top: -20px;
 }
 
 .kronike 
@@ -19,11 +18,12 @@
   height: 420px;
   background-color: #c495b2;
   border-radius: 10px;
-  box-shadow: 5px 10px 12px  #c495b2;
+  box-shadow: 10px 10px 12px  #c495b2;
   display: inline-block;
   margin-right: 20px;
   margin-bottom: 20px;
   margin-top: 20px;
+  margin-left: 50px;
 }
 
 .kronike:hover 
@@ -140,10 +140,8 @@
 
 .buton
 { 
-  margin-top: -30px;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 #more , #less

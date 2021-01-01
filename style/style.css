@@ -352,6 +352,8 @@ transition: .2s ease-in;
     width: 25%;
     
   }
+ 
+/*  
 .service_s h4::after {
   position: absolute;
   content: '';
@@ -363,7 +365,6 @@ transition: .2s ease-in;
 }
 
 
-/* 
 per me vone
 .service_s h4
 {
@@ -387,7 +388,7 @@ per me vone
 
 .service_s p
 {
-  color: #979797;
+  color: #494848;
 }
 
 #facilis{
