@@ -1,21 +1,35 @@
 CACHE MANIFEST
 # 2021-01-03 v1.0.0
 
+ballina.html
+style/style.css
+style/responsive.css
+style/storjet.css
+
 CACHE:
-/audio/yoga-sea.mp3
-/audio/running.mp3
-/audio/relaxation.mp3
-/audio/meditation.mp3
-/audio/fly-pilates.mp3
-/audio/eden-bali.mp3
+
+ballina.html
 /style/style.css
 /style/responsive.css
 /style/storjet.css
 /skript/fullwidth.js
+/img/mode.jpg
+/img/shendet.jpg
+/img/hobi.jpg
+/img/lifestylecover.jpg
+/img/cover2.jpg
+/img/cover3.jpg
+/img/cover4.jpg
+/img/picture.jpg
+/img/wheelchair.jpg
+/img/writing.jpg
+/img/argetuese.jpg
+/img/festa.jpg
+/img/kreative.jpg
 
 
 NETWORK:
 *
 
 FALLBACK:
-/html/ ballina.html
+/html/ offline.html
