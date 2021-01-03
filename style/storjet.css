@@ -77,7 +77,7 @@
   height: 300px;
   margin: 30px 30px;
   padding-bottom: 30px;
-}
+ }
 
 #fotoD
 {
@@ -97,6 +97,7 @@
   background: linear-gradient(to right, #923b71, #c495b2, #c495b257); 
   position:absolute;
   overflow: auto;
+  outline: 3px solid #c495b2;
 }
 
 #tekstM p 
@@ -104,17 +105,24 @@
   padding: 10px 20px 10px 20px;
 }
 
-#tekstM p a 
+#express 
 {
   text-decoration: none;
   color: #6a85c4;
   font-weight: bolder;
 }
 
-#tekstM p a:hover
+#express:hover
 {
   color: rgb(148, 3, 22);
 }
+
+#gazeta
+{
+  width: 20px;
+  height: 20px;
+}
+
 
 #tekstM h1
 {
