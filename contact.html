@@ -10,6 +10,109 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&display=swap"> 
+ <style type="text/css">
+  .container{
+  background: white;
+  border-radius: 1.2rem;
+  border-radius: 5px;
+  box-shadow: 4px 4px 2px rgba(254,236,164,1); 
+}
+
+.container h2{
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #332902;
+}
+
+.container .input_field{
+  margin-bottom: 10px;
+}
+
+.container .input_field input[type="text"],
+.container textarea{
+  border: 1px solid #e0e0e0;
+  width: 100%;
+  padding: 10px;
+  background: white;
+  color: black;
+}
+
+.container textarea{
+  /*resize: none;*/
+  height: 80px;
+
+}
+
+.container .btn input[type="submit"]{
+  border: 0px;
+  margin-top: 15px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  background: #71b6d9;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.container .btn input[type="submit"]:hover{
+  background: #7deb46;
+}
+
+#error_message{
+  margin-bottom: 20px;
+  background: #fe8b8e;
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
+</style>
+<script type="text/javascript">
+  function validate(){
+  var name = document.getElementById("name").value;
+  var subject = document.getElementById("subject").value;
+  var phone = document.getElementById("phone").value;
+  var email = document.getElementById("email").value;
+  var message = document.getElementById("message").value;
+  var error_message = document.getElementById("error_message");
+  
+  error_message.style.padding = "10px";
+  
+  var text;
+  if(name.length < 3){
+    text = "Ju lutem vendosni emrin tuaj të plotë";
+    error_message.innerHTML = text;
+    return false;
+  }
+  if(subject.length < 5){
+    text = "Tema duhet të përmbajë të paktën 5 shkronja";
+    error_message.innerHTML = text;
+    return false;
+  }
+  if(isNaN(phone) || phone.length < 9){
+    text = "Ju lutem vendosni numër telefoni valid";
+    error_message.innerHTML = text;
+    return false;
+  }
+  if(email.indexOf("@") == -1 || email.length < 6){
+    text = "Ju lutem vendosni e-mail adresë valide";
+    error_message.innerHTML = text;
+    return false;
+  }
+  if(message.length <= 10){
+    text = "Ju lutem përdorni te pakten 10 shkronja në mesazhin tuaj";
+    error_message.innerHTML = text;
+    return false;
+  }
+  alert("Forma e kontaktit u dërgua me sukses! :)");
+  return true;
+}
+</script>
 </head>
 <body>
   <div id="wrapper" class="wrapper">
@@ -62,27 +165,31 @@
     <main>
 
        <div class="container">  
-         <form id="contact" style="height: 505px;" action="" method="post">
-          <h3>LifeStyle</h3>
-          <h4>Na kontaktoni duke plotësuar formën e mëposhtme</h4>
-          <fieldset>
-            <input placeholder="Emri*" type="text" required autofocus>
-          </fieldset>
-          <fieldset>
-            <input placeholder="E-mail adresa*" type="email" required autocomplete="on">
-          </fieldset>
-          <fieldset>
-            <input placeholder="Numri i telefonit(opsional)" type="tel">
-          </fieldset>
-          <fieldset>
-      <textarea placeholder="Ju lutem shkruani mesazhin tuaj këtu....*" required></textarea>
-    </fieldset>
-          <fieldset>
-            <button name="submit" type="submit" id="contact-submit" data-submit="...Duke u procesuar">Dërgo</button>
-          </fieldset>
-    <p>Fushat me (*) janë obligative për tu plotësuar</p>
+  <h2>Na kontaktoni këtu</h2>
+  <div id="error_message"></div>
+  <form id="myform" onsubmit="return validate();">
+    <div class="input_field">
+        <input type="text" placeholder="Emri*" id="name" required autofocus>
+    </div>
+    <div class="input_field">
+        <input type="text" placeholder="Tema*" id="subject">
+    </div>
+    <div class="input_field">
+        <input type="text" placeholder="Numri i telefonit*" id="phone">
+    </div>
+    <div class="input_field">
+        <input type="text" placeholder="E-mail adresa*" id="email">
+    </div>
+    <div class="input_field">
+        <textarea placeholder="Mesazhi*" id="message"></textarea>
+    </div>
+    <div class="btn">
+        <input type="submit">
+    </div>
+    <p>Fushat me "*" janë obligative për tu plotësuar</p>
   </form>
 </div>
+      
           
        
           
