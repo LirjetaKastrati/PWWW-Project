@@ -1,0 +1,21 @@
+CACHE MANIFEST
+# 2021-01-03 v1.0.0
+
+CACHE:
+/audio/yoga-sea.mp3
+/audio/running.mp3
+/audio/relaxation.mp3
+/audio/meditation.mp3
+/audio/fly-pilates.mp3
+/audio/eden-bali.mp3
+/style/style.css
+/style/responsive.css
+/style/storjet.css
+/skript/fullwidth.js
+
+
+NETWORK:
+*
+
+FALLBACK:
+/html/ ballina.html
