@@ -4,7 +4,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <style>
 body {
-   margin: 0;
+   margin-top: 12% ;
+   margin-left: 30%;
     float: center;
 }
 canvas {
@@ -27,7 +28,7 @@ function startGame() {
     posht = new component(50, 50, "rebeccapurple", 300, 300);    
     majtas = new component(50, 50, "rebeccapurple", 0, 150);    
     djathtas = new component(50, 50, "rebeccapurple", 550, 150);
-    mesazhi = new component(30,30,"black",Math.floor(Math.random()*550),Math.floor(Math.random()*300)); 
+    mesazhi = new component(30,30,"black", Math.floor(Math.random()*550),Math.floor(Math.random()*300)); 
     myGameArea.start();
 }
 
@@ -110,7 +111,7 @@ function updateGameArea() {
             
         }
         if ((myGamePiece.x == mesazhi.x) && (myGamePiece.y == mesazhi.y) ) {
-            document.write('Ka arritur ne cak');
+            document.write('E keni perfunduar lojen me sukses!');
             
         }
     }
