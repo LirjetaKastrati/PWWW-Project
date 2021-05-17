@@ -1,55 +1,87 @@
 <?php
-include 'UserValidate.php';
-$myemail = "test@gmail.com";
-$myFotoId = "55555";
- $servername = "localhost:3306";
- $username = "root";
- $password = "";
- $db = "mydb";
- $conn = mysqli_connect($servername,$username,$password,$db);
- if(!$conn)
- {echo "Nuk mund te lidhet me databazen";}
-
-
-
-if(isset($_POST['save']))
-{   $user = new User('red');
-    $color = $user->merreNgjyren();
-
-    $foto = $_POST["foto"];
-    $fotoID = $_POST["fotoID"];
-    $emri = $_POST["emri"];
-    $mbiemri = $_POST["mbiemri"];
-    $email =$_POST["email"];
-    if(!preg_match("/^[a-zA-Z ]*$/",$emri) || !preg_match("/^[a-zA-Z ]*$/",$mbiemri)|| !$user->validEmail($email))
-    {throw new Exception("Te dhenat nuk jane ne formatin e duhur");}
+class User
+{
+    public $color;
+  
+    function __construct($color) {
    
-    
-  /*  $tema = $_POST["tema"];*/
-  /*  $vendi = $_POST["vendi"];*/
- else{
+      $this->color = $color;
 
-      include 'Session.php';
-    $query = "INSERT INTO shfytezuesi(Emri,Mbiemri,idFoto,Email,Foto) values
-     ('$emri','$mbiemri','$fotoID','$email','../foto/$foto')";
-     $query_run = mysqli_query($conn,$query);
-     if($query_run)
-     {echo "Te dhenat jane shtuar me sukses ".$_SESSION['page_count']." here";
-      if($_SESSION['page_count']%2==1)
-      echo "<body style='background-color:$color'>";
-    else{
-      $ngj_tjt = $user->vendoseNgjyren('blue');
-      $another_color = $user->merreNgjyren($ngj_tjt);
-
-      echo "<body style='background-color:$another_color'>";
-    }}
-
-     else{
-         echo "Te dhenat nuk jane shtuar";
-     }
     }
+function validEmail($str)
+{ $isValid = true;
+    $atIndex = strrpos($str, "@");
+    if (is_bool($atIndex) && !$atIndex)
+    {
+       $isValid = false;
+    }
+    else
+    {
+       $domain = substr($str, $atIndex+1);
+       $local = substr($str, 0, $atIndex);
+       $localLen = strlen($local);
+       $domainLen = strlen($domain);
+       if ($localLen < 1 || $localLen > 64)
+       {
+          // gjatsia e pjeses locale eshte tejkaluar
+          $isValid = false;
+       }
+       else if ($domainLen < 1 || $domainLen > 255)
+       {
+          // gjatsia e pjese se domen-it eshte tejkaluar
+          $isValid = false;
+       }
+       else if ($local[0] == '.' || $local[$localLen-1] == '.')
+       {
+          // pjesa lokale fillon me '.' ose mbaron me '.'
+          $isValid = false;
+       }
+       else if (preg_match('/\\.\\./', $local))
+       {
+          // pjesa lokale ka dy pika te njpasnjeshme
+          $isValid = false;
+       }
+       else if (!preg_match('/^[A-Za-z0-9\\-\\.]+$/', $domain))
+       {
+          // karkatere jo valide ne domen
+          $isValid = false;
+       }
+       else if (preg_match('/\\.\\./', $domain))
+       {
+          // domeni ka dy pika te njepasnjeshe
+          $isValid = false;
+       }
+       else if
+ (!preg_match('/^(\\\\.|[A-Za-z0-9!#%&`_=\\/$\'*+?^{}|~.-])+$/',
+                  str_replace("\\\\","",$local)))
+       {
+          // karaktere jovalidene pjesen lokalce
+          // pjesa lokale eshte e kuotuar
+          if (!preg_match('/^"(\\\\"|[^"])+"$/',
+              str_replace("\\\\","",$local)))
+          {
+             $isValid = false;
+          }
+       }
+       if ($isValid && !(checkdnsrr($domain,"MX") || 
+  checkdnsrr($domain,"A")))
+       {
+          // domena nuk eshte gjetutr ne DNS
+          $isValid = false;
+       }
+    }
+    return $isValid;
 
 
- 
 }
+function vendoseNgjyren($ngjyra){
+
+ $this->color = $ngjyra;
+
+}
+function merreNgjyren(){
+return $this->color;}
+
+}
+
 ?>
